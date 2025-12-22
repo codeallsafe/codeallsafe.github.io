@@ -1,0 +1,74 @@
+---
+import Header from "../components/Header.astro";
+import Project from "../components/Project.astro";
+import Sidebar from "../components/Sidebar.astro";
+const projects = [
+  {
+    title: "Enterprise Microservices Platform",
+    desc: [
+      "Architected and developed a high-performance microservices ecosystem using Golang and Node.js",
+      "Designed scalable REST and GraphQL APIs serving 100K+ daily active users",
+      "Implemented event-driven architecture with RabbitMQ for asynchronous processing",
+      "Optimized database queries and caching strategies with MongoDB and Redis"
+    ],
+    tech: ["Golang", "Node.js", "TypeScript", "MongoDB", "Redis", "RabbitMQ", "GraphQL"]
+  },
+  {
+    title: "AI-Powered SaaS Application",
+    desc: [
+      "Built full-stack AI-integrated platform using Next.js and NestJS",
+      "Developed intelligent automation features leveraging machine learning APIs",
+      "Implemented real-time data processing and WebSocket communication",
+      "Achieved 99.9% uptime with robust error handling and monitoring"
+    ],
+    tech: ["Next.js", "NestJS", "TypeScript", "PostgreSQL", "AI/ML APIs", "WebSockets"]
+  },
+  {
+    title: "E-Commerce Backend Infrastructure",
+    desc: [
+      "Designed and implemented scalable backend for multi-vendor marketplace",
+      "Built secure payment integration with multiple payment gateways",
+      "Developed inventory management and order processing systems",
+      "Optimized API performance handling 50K+ requests per minute"
+    ],
+    tech: ["Golang", "PostgreSQL", "Redis", "Docker", "REST API", "Microservices"]
+  }
+];
+---
+
+<!DOCTYPE html>
+<html
+>
+  <Header title="Software Development | İsa Cansın" />
+  <body>
+    <div class="content">
+        <Sidebar selectedItem="software-development" />
+      <nav class="main">
+        <div class="container">
+          <div class="back-nav-container">
+            <a href="/" class="back-nav-button w-inline-block"
+              ><img src="/assets/back.svg" loading="lazy" alt="" class="back-nav-img" />
+              <div>Back</div></a
+            >
+          </div>
+          <div class="content-container">
+            <h1>Software Development</h1>
+            <section class="items-container">
+                <div class="resouce-items">
+                    {projects.map(project => (
+                      <Project 
+                        title={project.title} 
+                        desc={project.desc}
+                        tech={project.tech}
+                      />
+                    ))}
+                  </div>
+            </section>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+  </body>
+</html>

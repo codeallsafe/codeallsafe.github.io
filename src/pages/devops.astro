@@ -1,0 +1,74 @@
+---
+import Header from '../components/Header.astro';
+import Project from "../components/Project.astro";
+import Sidebar from "../components/Sidebar.astro";
+const projects = [
+  {
+    title: "Multi-Cloud Infrastructure Architecture",
+    desc: [
+      "Designed and deployed scalable infrastructure across AWS, DigitalOcean, and GCP",
+      "Implemented Infrastructure as Code (IaC) for automated provisioning and management",
+      "Configured load balancing, auto-scaling, and disaster recovery strategies",
+      "Reduced infrastructure costs by 40% through optimization and resource management"
+    ],
+    tech: ["AWS", "DigitalOcean", "GCP", "Terraform", "Nginx", "Load Balancing"]
+  },
+  {
+    title: "Kubernetes Orchestration Platform",
+    desc: [
+      "Built production-grade Kubernetes clusters for microservices deployment",
+      "Implemented CI/CD pipelines with GitHub Actions for automated testing and deployment",
+      "Configured monitoring and logging with Prometheus, Grafana, and ELK stack",
+      "Achieved zero-downtime deployments with rolling updates and health checks"
+    ],
+    tech: ["Kubernetes", "Docker", "GitHub Actions", "Monitoring", "CI/CD", "Helm"]
+  },
+  {
+    title: "High-Availability Server Infrastructure",
+    desc: [
+      "Managed and optimized Linux server infrastructure for production applications",
+      "Implemented Redis caching and RabbitMQ message queuing for performance",
+      "Automated server provisioning and configuration with Bash scripting",
+      "Maintained 99.95% uptime with proactive monitoring and incident response"
+    ],
+    tech: ["Linux", "Bash", "Redis", "RabbitMQ", "Nginx", "Server Management"]
+  }
+];
+---
+
+<!DOCTYPE html>
+<html
+>
+  <Header title="DevOps & Cloud | İsa Cansın" />
+  <body>
+    <div class="content">
+        <Sidebar selectedItem="devops" />
+      <nav class="main">
+        <div class="container">
+          <div class="back-nav-container">
+            <a href="/" class="back-nav-button w-inline-block"
+              ><img src="/assets/back.svg" loading="lazy" alt="" class="back-nav-img" />
+              <div>Back</div></a
+            >
+          </div>
+          <div class="content-container">
+            <h1>DevOps</h1>
+            <section class="items-container">
+                <div class="resouce-items">
+                    {projects.map(project => (
+                      <Project 
+                        title={project.title} 
+                        desc={project.desc}
+                        tech={project.tech}
+                      />
+                    ))}
+                  </div>
+            </section>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+  </body>
+</html>
