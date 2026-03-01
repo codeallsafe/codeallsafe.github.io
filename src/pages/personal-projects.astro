@@ -4,28 +4,33 @@ import Project from '../components/Project.astro';
 import Sidebar from '../components/Sidebar.astro';
 const projects = [
   {
-    title: "TeleJS",
+    title: "IdeaScout",
     desc: [
-      "Built a lightweight, open-source Slack API framework for efficient bot development",
-      "Developed in Node.js and published as an NPM package"
+      "AI-powered SaaS platform that surfaces validated business opportunities by analyzing Reddit, G2 and ProductHunt data",
+      "Built on RAG (Retrieval-Augmented Generation) architecture with LangChain and Chroma vector database",
+      "NestJS backend and Next.js frontend with GPT-4o-mini for intelligent idea scoring and categorization",
+      "Designed to help founders and product teams identify real user pain points before building"
     ],
-    tech: ["Node.js", "NPM"]
+    tech: ["NestJS", "Next.js", "LangChain", "RAG", "Chroma", "Python", "GPT-4o-mini"]
   },
   {
-    title: "pyPrompter",
+    title: "AEO Analytics Platform",
     desc: [
-      "Contributed to a popular open-source Python pip package for building interactive CLIs",
-      "Developed a feature that lets you 'freeze' inquirer choices"
+      "Analytics platform that tracks how AI-powered search engines (ChatGPT, Perplexity, Gemini) respond to brand-related queries",
+      "Helps brands understand and improve their visibility in the emerging Answer Engine Optimization landscape",
+      "Monitors AI-generated responses over time and surfaces actionable content recommendations",
+      "Built with NestJS, Next.js and automated AI query pipelines"
     ],
-    tech: ["Python"]
+    tech: ["NestJS", "Next.js", "AI Pipelines", "PostgreSQL", "TypeScript"]
   },
   {
-    title: "WebAssetHub",
+    title: "Interactive Portfolio",
     desc: [
-      "Created a web scraper tool that monitors digital assets across multiple platforms and offers them at competitive prices",
-      "Sold over 700 items"
+      "Personal portfolio and CV built with Astro.js for fast, static-first delivery",
+      "Integrated React components and Tailwind CSS for interactive UI elements",
+      "Deployed on GitHub Pages with automated build and release workflow"
     ],
-    tech: ["Python", "Selenium"]
+    tech: ["Astro.js", "React", "Tailwind CSS", "GitHub Pages", "CI/CD"]
   }
 ];
 ---
@@ -33,7 +38,7 @@ const projects = [
 <!DOCTYPE html>
 <html
 >
-  <Header title="Personal Projects | Sam Bernstein" />
+  <Header title="Personal Projects | İsa Cansın" />
   <body>
     <div class="content">
         <Sidebar selectedItem="personal-projects" />

@@ -4,34 +4,34 @@ import Project from "../components/Project.astro";
 import Sidebar from "../components/Sidebar.astro";
 const projects = [
   {
-    title: "Multi-Cloud Infrastructure Architecture",
+    title: "Production Server Infrastructure — buy.run",
     desc: [
-      "Designed and deployed scalable infrastructure across AWS, DigitalOcean, and GCP",
-      "Implemented Infrastructure as Code (IaC) for automated provisioning and management",
-      "Configured load balancing, auto-scaling, and disaster recovery strategies",
-      "Reduced infrastructure costs by 40% through optimization and resource management"
+      "Configured and managed Linux production servers for a large-scale e-commerce platform serving real traffic",
+      "Set up Nginx as reverse proxy with SSL termination, request routing and static asset serving",
+      "Maintained 99.9% uptime through proactive monitoring, log analysis and rapid incident response",
+      "Managed environment configuration, secret management and deployment workflows across staging and production"
     ],
-    tech: ["AWS", "DigitalOcean", "GCP", "Terraform", "Nginx", "Load Balancing"]
+    tech: ["Linux", "Nginx", "Bash", "Server Management", "SSL", "CI/CD"]
   },
   {
-    title: "Kubernetes Orchestration Platform",
+    title: "Event-Driven Pipeline Architecture",
     desc: [
-      "Built production-grade Kubernetes clusters for microservices deployment",
-      "Implemented CI/CD pipelines with GitHub Actions for automated testing and deployment",
-      "Configured monitoring and logging with Prometheus, Grafana, and ELK stack",
-      "Achieved zero-downtime deployments with rolling updates and health checks"
+      "Designed and implemented asynchronous message queuing with RabbitMQ for decoupled microservice communication",
+      "Built Redis caching layers that significantly reduced database load and improved API response times",
+      "Containerized all services with Docker for consistent environments across development and production",
+      "Implemented CI/CD pipelines with automated testing and deployment to reduce manual release overhead"
     ],
-    tech: ["Kubernetes", "Docker", "GitHub Actions", "Monitoring", "CI/CD", "Helm"]
+    tech: ["RabbitMQ", "Redis", "Docker", "CI/CD", "GitHub Actions", "Microservices"]
   },
   {
-    title: "High-Availability Server Infrastructure",
+    title: "Cloud Infrastructure Management",
     desc: [
-      "Managed and optimized Linux server infrastructure for production applications",
-      "Implemented Redis caching and RabbitMQ message queuing for performance",
-      "Automated server provisioning and configuration with Bash scripting",
-      "Maintained 99.95% uptime with proactive monitoring and incident response"
+      "Deployed and managed cloud infrastructure across AWS and DigitalOcean for multiple projects",
+      "Configured VPS environments, firewall rules, SSH hardening and automated backups",
+      "Automated server provisioning and routine operations with Bash scripting",
+      "Optimized cloud resource usage to balance performance with cost efficiency"
     ],
-    tech: ["Linux", "Bash", "Redis", "RabbitMQ", "Nginx", "Server Management"]
+    tech: ["AWS", "DigitalOcean", "GCP", "Docker", "Bash", "Linux"]
   }
 ];
 ---

@@ -4,34 +4,45 @@ import Project from "../components/Project.astro";
 import Sidebar from "../components/Sidebar.astro";
 const projects = [
   {
-    title: "Enterprise Microservices Platform",
+    title: "Full-Scale E-Commerce Platform — buy.run",
     desc: [
-      "Architected and developed a high-performance microservices ecosystem using Golang and Node.js",
-      "Designed scalable REST and GraphQL APIs for high-traffic production environments",
-      "Implemented event-driven architecture with RabbitMQ for asynchronous processing",
-      "Optimized database queries and caching strategies with MongoDB and Redis"
+      "Core member of a 2-person team that built a full-featured Amazon-style marketplace from scratch using the MERN stack",
+      "Implemented payment gateway integrations (iyzico, PayTR) and cargo provider APIs with robust error handling and webhook support",
+      "Built seller dashboards, order management system, product search and filtering with MongoDB aggregation pipelines",
+      "Containerized all services with Docker and managed deployments on Linux production servers with Nginx reverse proxy",
+      "Designed event-driven communication between services using RabbitMQ and optimized performance with Redis caching"
     ],
-    tech: ["Golang", "Node.js", "TypeScript", "MongoDB", "Redis", "RabbitMQ", "GraphQL"]
+    tech: ["Node.js", "TypeScript", "React", "MongoDB", "PostgreSQL", "Redis", "RabbitMQ", "Docker", "Nginx"]
   },
   {
-    title: "AI-Powered SaaS Application",
+    title: "AI-Powered Call Center Intelligence — Hyperion Energy",
     desc: [
-      "Built full-stack AI-integrated platform using Next.js and NestJS",
-      "Developed intelligent automation features leveraging machine learning APIs",
-      "Implemented real-time data processing and WebSocket communication",
-      "Achieved 99.9% uptime with robust error handling and monitoring"
+      "Engineered a conversion prediction system in Python by analyzing telephony system documentation and modeling call parameters",
+      "Built statistical algorithms that significantly improved lead-to-sale accuracy for the call center team",
+      "Reverse-engineered a persistent answering machine detection bug in the telephony system and resolved it, substantially reducing calls lost to voicemail",
+      "Developed a full-stack e-learning platform covering curriculum management, video delivery and user progress tracking"
     ],
-    tech: ["Next.js", "NestJS", "TypeScript", "PostgreSQL", "AI/ML APIs", "WebSockets"]
+    tech: ["Python", "Node.js", "TypeScript", "NestJS", "PostgreSQL", "REST API"]
   },
   {
-    title: "E-Commerce Backend Infrastructure",
+    title: "AI SaaS Products — IdeaScout & AEO Platform",
     desc: [
-      "Designed and implemented scalable backend for multi-vendor marketplace",
-      "Built secure payment integration with multiple payment gateways",
-      "Developed inventory management and order processing systems",
-      "Optimized API performance for high-throughput production workloads"
+      "Building IdeaScout: an AI-powered platform that analyzes Reddit, G2 and ProductHunt data using RAG architecture to surface validated business opportunities",
+      "Developing an AEO Analytics Platform to help brands monitor and improve their visibility in AI-powered search engines like ChatGPT and Perplexity",
+      "Designing full-stack architecture with NestJS backend, Next.js frontend, Chroma vector database and LangChain pipelines",
+      "Integrating GPT-4o-mini for intelligent scoring, categorization and insight generation"
     ],
-    tech: ["Golang", "PostgreSQL", "Redis", "Docker", "REST API", "Microservices"]
+    tech: ["NestJS", "Next.js", "TypeScript", "LangChain", "RAG", "Chroma", "Python", "GPT-4o-mini", "Docker"]
+  },
+  {
+    title: "Freelance Web & E-Commerce Solutions",
+    desc: [
+      "Developed e-commerce solutions for SMEs including product catalog, cart, checkout flows and admin panels",
+      "Integrated payment gateways and cargo provider APIs into client platforms",
+      "Built portfolio and corporate websites for small businesses and independent professionals",
+      "Delivered data analysis and prediction algorithm projects using Python for demand forecasting and trend analysis"
+    ],
+    tech: ["Node.js", "React", "TypeScript", "MongoDB", "Python", "REST API", "Docker"]
   }
 ];
 ---

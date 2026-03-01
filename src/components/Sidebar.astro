@@ -22,7 +22,7 @@ const { selectedItem } = Astro.props;
         />
         <div>
           <div class="label-white">İsa Cansın</div>
-          <div class="label-gray">Software Developer & Architect</div>
+          <div class="label-gray">Full Stack Developer & Architect</div>
         </div>
       </div>
     </a>
@@ -72,6 +72,23 @@ const { selectedItem } = Astro.props;
           class="nav-link-image"
         />
         <div>DevOps</div>
+      </a>
+      <a
+        href="/personal-projects"
+        class={`nav-link-container w-inline-block ${
+          selectedItem === 'personal-projects' ? 'w--current' : ''
+        }`}
+        aria-current={
+          selectedItem === 'personal-projects' ? 'page' : undefined
+        }
+      >
+        <img
+          src="/assets/browser.svg"
+          loading="eager"
+          alt=""
+          class="nav-link-image"
+        />
+        <div>Personal Projects</div>
       </a>
     </nav>
 
